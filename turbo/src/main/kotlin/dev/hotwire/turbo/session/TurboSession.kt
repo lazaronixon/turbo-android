@@ -37,9 +37,9 @@ import java.util.*
  * @property webView An instance of a [TurboWebView] to be shared/managed.
  */
 @Suppress("unused")
-class TurboSession internal constructor(
-    val sessionName: String,
-    val activity: AppCompatActivity,
+class TurboSession constructor(
+    internal sessionName: String,
+    internal activity: AppCompatActivity,
     val webView: TurboWebView
 ) {
     internal var currentVisit: TurboVisit? = null
