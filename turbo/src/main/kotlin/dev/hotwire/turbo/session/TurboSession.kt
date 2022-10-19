@@ -38,8 +38,8 @@ import java.util.*
  */
 @Suppress("unused")
 class TurboSession internal constructor(
-    private val sessionName: String,
-    private val activity: AppCompatActivity,
+    val sessionName: String,
+    val activity: AppCompatActivity,
     val webView: TurboWebView
 ) {
     internal var currentVisit: TurboVisit? = null
