@@ -38,7 +38,7 @@ import java.util.*
  */
 @Suppress("unused")
 class TurboSession internal constructor(
-    internal val sessionName: String,
+    private val sessionName: String,
     private val activity: AppCompatActivity,
     val webView: TurboWebView
 ) {
